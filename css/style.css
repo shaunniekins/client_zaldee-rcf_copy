@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100%;
+    font-family: 'Go_Medium', Arial, sans-serif;
+    background: white;
+}
+
+.container { 
+    margin: 0 auto;
+    padding: 0 20rem;
+}
+
+#navbar .container{
+    background: black;
+    color: white;
+    height: 4.25rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .container .division {
+    display: flex;
+    justify-content: center;
+    align-items: inherit;
+    gap: 4rem;
+}
+
+#navbar #logo {
+    font-size: 24px;
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+}
+
+#extend {
+    gap: 3rem;
+}
+
+#others {
+    gap: 2rem;
+}
+
+li {
+    font-size: 13.75px;
+}
+
+#navbar .container li a:hover {
+    color: maroon;
+    transition: 0.5s;
+}
+
+#spacer {
+    background: lightgray;
+}
+
+#spacer .container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10rem;
+    line-height: 1.25rem;
+    margin: 0 3rem;
+}
+
+#spacer .container .boxes{
+    display: flex;
+}
+
+#spacer .container .boxes .box {
+    padding: 1.25rem 3rem;
+    border-bottom: 5px solid lightgray;
+}
+
+#spacer .container .boxes .box:hover {
+    background: gray;
+    transition: 0.25s;
+    border-bottom: 5px solid black;
+}
+
+#head {
+    background: url(/img/header_img.jpg);
+    background-size: cover;
+}
+
+#head .container {
+    height: 77vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#head .container #square {
+    padding: 5rem 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#head .container h1 {
+    font-size: 70px;
+    color: maroon;
+}
+
+#head .container h2 {
+    font-size: 40px;
+    color: white;
+}
+
+#head .container .video {
+    font-size: 15px;
+    background: transparent;
+    border: 2px solid maroon;
+    color: maroon;
+    padding: 0.75rem 2rem;
+}
+
+#head .container .video:hover {
+    transform: scale(1.25, 1.25);
+    background: maroon;
+    color: white;
+}
+
+#content {
+    background: maroon;
+    color: white;
+}
+
+#content .container {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content .container #side_area {
+    display: flex;
+    flex-direction: column;
+}
+
+#foot {
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background: black;
+    color: white;
+    line-height: 1.75rem;
+}
+
+#foot .container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+#foot .container h4 {
+    padding-bottom: 1rem;
+}
