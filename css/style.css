@@ -7,15 +7,18 @@
 body {
     height: 100%;
     font-family: 'Go_Medium', Arial, sans-serif;
-    background: white;
+    background: black;
 }
 
 .container { 
     margin: 0 auto;
-    padding: 0 20rem;
+    padding: 0 15rem;
 }
 
 #navbar .container{
+    /*position: fixed;
+    left: 0;
+    right: 0;*/
     background: black;
     color: white;
     height: 4.25rem;
@@ -28,7 +31,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: inherit;
-    gap: 4rem;
+    gap: 2rem;
 }
 
 #navbar #logo {
@@ -40,7 +43,7 @@ body {
     color: white;
 }
 
-ul {
+#navbar ul {
     list-style: none;
     display: flex;
 }
@@ -91,14 +94,15 @@ li {
 }
 
 #head {
-    background: url(/img/header_img.jpg);
+    background: url(../img/digital-pic.webp);
     background-size: cover;
+    background-position: center;
 }
 
 #head .container {
     height: 77vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
 }
 
@@ -110,13 +114,43 @@ li {
     background: rgba(0, 0, 0, 0.5);
 }
 
-#head .container h1 {
-    font-size: 70px;
-    color: maroon;
+#head .container #square #form {
+    color: white;
+    display: flex;
+    flex-direction: column;
 }
 
-#head .container h2 {
-    font-size: 40px;
+#head .container #square #form input,
+#head .container #square #form button{
+    border-radius: 5px;
+    padding: 0.5rem;
+    margin: 0.25rem;
+    width: 15rem;
+}
+
+#head .container #square #form button{
+    background: maroon;
+    color: white;
+    border: 1px solid black;
+}
+
+#head .container #square #form button:hover{
+    background: white;
+    color: maroon;
+    transform: scale(1.05);
+    transition: 0.25s;
+}
+
+#head .container #square #form :nth-child(1) {
+    margin-top: 2rem;
+}
+
+#head .container #square #form :nth-child(4) {
+    margin-top: 2rem;
+}
+
+#head .container h4 {
+    font-size: 30px;
     color: white;
 }
 
@@ -134,21 +168,407 @@ li {
     color: white;
 }
 
+/* --------------
+   ABOUT TITLE
+----------------- */
+#about_title {
+    background: url(../img/img_1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: lighten;
+    margin-top: 5rem;
+}
+
+#about_title .container {
+    height: 77vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#about_title .container #square_text {
+    line-height: 3.5rem;
+    color: white;
+    padding: 6rem 9.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#about_title .container #square_text h4{
+    font-size: 60px;
+    font-stretch: expanded;
+    letter-spacing: 0.5rem;
+    color: maroon;
+}
+
+#about_title .container #square_text h5{
+    font-size: 40px;
+}
+/*******************/
+
+/* --------------
+   ABOUT HISTORY
+----------------- */
+.about_history {
+    background: lightgray;
+}
+
+.about_history .container {
+    height: 77vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_history .container .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about_history .container h4{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.about_history .container .text_para{
+    text-align: justify;
+}
+
+.about_history .container button{
+    padding: 0.5rem;
+    margin: 1.5rem 0;
+    width: 15rem;
+    background: maroon;
+    color: white;
+    border: 1px solid maroon;
+}
+
+.about_history .container button:hover{
+    background: white;
+    color: maroon;
+    transform: scale(1.05);
+    transition: 0.25s;
+}
+/*******************/
+
+/* --------------
+   ABOUT PASSION
+----------------- */
+.about_passion {
+    background: black;
+}
+
+.about_passion .container {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_passion .container .text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about_passion .container h4{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.about_passion .container .text_para{
+    text-align: justify;
+}
+
+.about_passion img {
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+/*******************/
+
+/* --------------
+   ABOUT SOLUTIONS
+----------------- */
+.about_solutions {
+    background: lightgray;
+}
+
+.about_solutions .container {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_solutions .container .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about_solutions .container h4{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.about_solutions .container .text_para{
+    text-align: justify;
+}
+
+.about_solutions img {
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+/*******************/
+
+
+/* --------------
+   ABOUT INNOVATION
+----------------- */
+.about_innovation {
+    background: black;
+}
+
+.about_innovation .container {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_innovation .container .text{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about_innovation .container h4{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.about_innovation .container .text_para{
+    text-align: justify;
+}
+
+.about_innovation img {
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+/*******************/
+
+/* --------------
+   ABOUT CULTURE
+----------------- */
+.about_culture {
+    background: lightgray;
+}
+
+.about_culture .container {
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_culture .container .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about_culture .container h4{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.about_culture .container .text_para{
+    text-align: justify;
+}
+
+.about_culture img {
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+/*******************/
+
+/* --------------
+   ABOUT VALUES
+----------------- */
+.about_values {
+    background: black;
+}
+
+.about_values .container {
+    color: white;
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about_values .container .text{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.about_values .container h4{
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.about_values .container .text_para{
+    text-align: justify;
+}
+
+.about_values img {
+    height: 50vh;
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+}
+/*******************/
+
+#products_title {
+    background: black;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+#products_title  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#products_title  .container h2{
+    color: white;
+    font-size: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.products {
+    background: url(../img/party-2.jpg);
+    background-size: cover;
+    background-position: center;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+
+.products .container {
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.products .container .product__item--details {
+    padding: 3rem 2rem;
+    width: 28rem;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.products .container .product__item--details  h3{
+    font-size: 35px;
+    padding-bottom: 1.5rem;
+}
+
+.products .container .product__item--details  h4{
+    font-size: 20px;
+    padding-bottom: 1.5rem;
+}
+
+.products .container .product__item--details  li{
+    font-size: 15px;
+    line-height: 1.5rem;
+}
+
+.products .container .product__item--details .buy {
+    font-size: 15px;
+    margin-top: 1rem;
+    width: 10rem;
+    background: maroon;
+    border: 2px solid maroon;
+    color: white;
+    padding: 0.75rem 2rem;
+}
+
+.products .container .product__item--details .buy:hover {
+    background: white;
+    border: 2px solid white;
+    color: maroon;
+    padding: 0.75rem 2rem;
+    transform: scale(1.05);
+    transition: 0.25s;
+}
+
+.product_img{
+    max-width: 40%;
+}
+
 #content {
     background: maroon;
     color: white;
 }
 
 #content .container {
-    height: 20vh;
+    padding: 0 25rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 #content .container #side_area {
+    max-width: 600px;
+    line-height: 1.5rem;
     display: flex;
     flex-direction: column;
+}
+
+#content .container #side_area :nth-child(1) {
+    font-size: 30px;
+    padding-bottom: 2rem;
+}
+
+#content .container #side_area :nth-child(2) {
+    padding-bottom: 1.5rem;
+}
+
+#content .container #side_area #create_account {
+    padding: 1rem;
+    margin: 0.25rem;
+    width: 15rem;
+    background: white;
+    color: maroon;
+    border: 1px solid black;
+}
+
+#content .container #side_area #create_account:hover {
+    transform: scale(1.1);
+    transition: 0.25s;
 }
 
 #foot {
@@ -166,7 +586,7 @@ li {
     padding-bottom: 2rem;
     display: flex;
     justify-content: space-between;
-    text-align: left;
+    text-align: center;
 }
 
 #foot .container h4 {
